@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "Weather-app",
   "version": "1.0.0",
-  "description": "template repo",
+  "description": "Weather app using visual crossing api",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kirito-exe/template-repository.git"
+    "url": "git+https://github.com/Kirito-exe/Weather-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/Kirito-exe/template-repository/issues"
+    "url": "https://github.com/Kirito-exe/Weather-app/issues"
   },
-  "homepage": "https://github.com/Kirito-exe/template-repository#readme",
+  "homepage": "https://github.com/Kirito-exe/Weather-app#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "css-loader": "^7.1.5",

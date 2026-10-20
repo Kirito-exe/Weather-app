@@ -1,2 +1,3 @@
-# rTemplate repository
-Template repos for other repositories to setup
+# Weather App
+
+A weather app for the odin project

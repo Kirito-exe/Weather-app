@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form {
+  flex: 1;
+  padding-left: 20%;
+}
+#current {
+  background-color: aqua;
+  margin: 2em;
+  border-radius: 50px;
+  padding: 2em;
+}
+.prev-days {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.content {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
