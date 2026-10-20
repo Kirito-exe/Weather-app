@@ -17,6 +17,15 @@ form {
   margin: 2em;
   border-radius: 50px;
   padding: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+#current .image {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  min-width: 200px;
 }
 .prev-days {
   background-color: aquamarine;

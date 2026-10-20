@@ -1,5 +1,6 @@
 export default function loadData(data) {
   console.log(data);
+  console.log(data.currentConditions.icon);
   let info = document.querySelector("#current .info");
   let temp = info.querySelector("h2");
   let max = info.querySelector(".max");
@@ -15,4 +16,12 @@ export default function loadData(data) {
   address.textContent = data["address"].toUpperCase();
   perci.textContent = `Percipitation chance: ${data.currentConditions.precipprob}`;
   descri.textContent = data.description;
+  let img = document.querySelector("#current .image");
+  import(`../assests/${data.currentConditions.icon}.png`)
+    .then((result) => {
+      img.style.backgroundImage = `url(${result.default})`;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
