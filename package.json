@@ -43,6 +43,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
+    "date-fns": "^4.4.0",
     "file-loader": "^6.2.0"
   }
 }
