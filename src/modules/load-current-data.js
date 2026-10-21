@@ -34,7 +34,7 @@ export function loadData(data, tempUnit) {
     });
 }
 export function loadingControl() {
-  let loading = document.querySelector("dialog");
+  let loading = document.querySelector("#loading");
   function showLoading() {
     loading.showModal();
   }
@@ -42,4 +42,14 @@ export function loadingControl() {
     loading.close();
   }
   return { showLoading, closeLoading };
+}
+export function errorDialog() {
+  let error = document.querySelector("#error");
+  function errorLoading() {
+    error.showModal();
+  }
+  function closeError() {
+    error.closed();
+  }
+  return { errorLoading, closeError };
 }

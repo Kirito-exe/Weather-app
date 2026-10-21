@@ -1,5 +1,5 @@
 import { fetchStorage } from "./webStorage.js";
-import { loadingControl } from "./load-current-data.js";
+import { loadingControl, errorDialog } from "./load-current-data.js";
 export default async function weatherApi(
   location = "Delhi",
   metric = "metric",
@@ -15,6 +15,10 @@ export default async function weatherApi(
     lc.closeLoading();
     return json;
   } catch (error) {
+    let lc = loadingControl();
+    lc.closeLoading();
     console.log("fetch error occured", error);
+    let ec = errorDialog();
+    ec.errorLoading();
   }
 }
