@@ -34,9 +34,11 @@ import { populateStorage } from "./modules/webStorage.js";
     if (format.temp === "C") {
       format.temp = "F";
       format.unitGrp = "us";
+      toggle.textContent = "Switch to °C";
     } else {
       format.temp = "C";
       format.unitGrp = "metric";
+      toggle.textContent = "Switch to °F";
     }
     screenControl("");
   });
