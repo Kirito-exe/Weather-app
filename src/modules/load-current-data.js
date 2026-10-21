@@ -1,6 +1,4 @@
 export function loadData(data, tempUnit) {
-  console.log(data);
-  console.log(data.currentConditions.icon);
   let body = document.querySelector("body");
   let info = document.querySelector("#current .info");
   let temp = info.querySelector("h2");
